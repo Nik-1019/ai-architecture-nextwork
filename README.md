@@ -17,7 +17,10 @@ C4Container
     System_Ext(gemini, "Google Gemini API", "External LLM service")
 
     Rel(user, api, "POST /ask", "HTTPS")
-    Rel(api, orchestrator, "Passes user question")
-    Rel(orchestrator, provider, "Sends formatted prompt")
+    Rel(api, orchestrator, "User question")
+    Rel(orchestrator, provider, "LLM prompt")
     Rel(provider, gemini, "generate_content()", "HTTPS")
+
+    UpdateRelStyle(api, orchestrator, $offsetY="-40")
+    UpdateRelStyle(orchestrator, provider, $offsetY="-40")
 ```
