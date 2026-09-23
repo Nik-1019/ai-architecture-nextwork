@@ -26,3 +26,11 @@ C4Container
     UpdateRelStyle(orchestrator, provider, $offsetX="-35", $offsetY="-10")
     UpdateRelStyle(provider, gemini, $offsetX="10")
 ```
+
+## Container-to-Code Mapping
+
+| Diagram Container | Code File | Responsibility |
+|---|---|---|
+| API Container | `main.py` | Receives HTTP requests and returns responses |
+| Prompt Orchestrator | `orchestrator.py` | Builds prompts from user input and system context |
+| Model Provider | `model_provider.py` | Sends prompts to Gemini and returns generated text |
