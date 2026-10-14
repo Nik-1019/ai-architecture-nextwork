@@ -2,8 +2,6 @@
 
 ## Architecture
 
-[![Architecture Check](https://github.com/Nikko-1019/ai-architecture-nextwork/actions/workflows/architecture.yml/badge.svg)](https://github.com/Nikko-1019/ai-architecture-nextwork/actions/workflows/architecture.yml)
-
 ```mermaid
 %%{init: {"c4": {"c4ShapeMargin": 110, "c4ShapeInRow": 3}}}%%
 C4Container
@@ -29,3 +27,4 @@ C4Container
     UpdateRelStyle(model_provider, genai, $offsetX="10")
 ```
 
+[![Architecture Check](https://github.com/Nikko-1019/ai-architecture-nextwork/actions/workflows/architecture.yml/badge.svg)](https://github.com/Nikko-1019/ai-architecture-nextwork/actions/workflows/architecture.yml)
